@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amelia Nurul Mupty</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Bagian Start Content -->
+  <div class="min-h-screen flex justify-center items-center" id="App-Start">
+    <div class="w-full max-w-md p-6 bg-purple-400 flex flex-col items-center rounded-xl">
+      <img src="Amel-title.jpeg" alt="Amelia Title" class="w-32 md:w-40">
+      <h1 class="text-2xl font-bold text-center mt-4">Hallo, Amelia Nurul Mupty ❤️</h1>
+      <button class="p-3 w-full max-w-[200px] bg-pink-300 rounded-md mt-5" id="Start">Mulai</button>
+    </div>
+  </div>
+
+  <!-- Bagian Konten -->
+  <div class="min-h-screen flex justify-center items-center hidden" id="App-Content">
+    <div class="w-full max-w-md p-6 bg-purple-400 flex flex-col items-center rounded-xl">
+      <h1 class="font-bold mt-2 text-center text-white">Amelia Nurul Mupty</h1>
+
+      <!-- Bagian Question -->
+      <div class="mt-10 w-full max-w-[350px] p-7 bg-slate-100 rounded-md flex items-center flex-col" id="question-container"></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+    <div class="bg-white p-6 rounded-lg w-full max-w-sm">
+      <h2 class="text-2xl font-bold text-center">Jawaban Kamu</h2>
+      <ul id="result-list" class="mt-4"></ul>
+      <h2 class="text-xl font-semibold text-center mt-4">Terima Kasih sudah menjawab!</h2>
+      <p class="text-center mt-2">Jangan lupa screenshot yah! 🚀🤩🥳</p>
+      <button id="close-modal" class="mt-4 bg-red-500 text-white py-2 px-4 rounded-md w-full">Tutup</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
